@@ -2,17 +2,19 @@ import axios from "axios";
 import { useState } from "react";
 import "./styles.css";
 import { Todo } from "./Todo";
+import { TodoType } from "./types/todo";
 
-type TodoType = {
-  // "userId": 1,
-  // "id": 1,
-  // "title": "delectus aut autem",
-  // "completed": false
-  userId: number;
-  id: number;
-  title: string;
-  completed: boolean;
-};
+// type TodoType = {
+//   // "userId": 1,
+//   // "id": 1,
+//   // "title": "delectus aut autem",
+//   // "completed": false
+//   userId: number;
+//   id: number;
+//   title: string;
+//   completed: boolean;
+// };
+
 export default function App() {
   // const [todos, setTodos] = useState<any>([]);
   const [todos, setTodos] = useState<Array<TodoType>>([]);

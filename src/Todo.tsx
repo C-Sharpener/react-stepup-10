@@ -1,13 +1,19 @@
-type TodoType = {
-  userId: number;
-  // id: number;
-  title: string;
-  // completed: boolean;
-  completed?: boolean;
-};
+import { TodoType } from "./types/todo";
+
+// type TodoType = {
+//   userId: number;
+//   // id: number;
+//   title: string;
+//   // completed: boolean;
+//   completed?: boolean;
+// };
 
 // export const Todo = (props) => {
-export const Todo = (props: TodoType) => {
+// export const Todo = (props: TodoType) => {
+// export const Todo = (
+//   props: Pick<TodoType, "userId" | "title" | "completed">
+// ) => {
+export const Todo = (props: Omit<TodoType, "id">) => {
   // const { title, userid } = props;
   // const { title, userid, completed } = props;
   // const { title, userId, completed } = props;
