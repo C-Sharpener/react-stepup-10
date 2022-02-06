@@ -34,7 +34,14 @@ export default function App() {
       {todos.map((todo) => (
         // <p>{todo.title}</p>
         // <Todo title={todo.title} userid={todo.userid} />
-        <Todo title={todo.title} userid={todo.userId} />
+        // <Todo title={todo.title} userid={todo.userId} />
+        // <Todo title={todo.title} userId={todo.userId} />
+        <Todo
+          key={todo.id}
+          title={todo.title}
+          userId={todo.userId}
+          completed={todo.completed}
+        />
       ))}
     </div>
   );
