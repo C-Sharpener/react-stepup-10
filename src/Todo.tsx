@@ -1,3 +1,4 @@
+import { VFC } from "react";
 import { TodoType } from "./types/todo";
 
 // type TodoType = {
@@ -13,7 +14,8 @@ import { TodoType } from "./types/todo";
 // export const Todo = (
 //   props: Pick<TodoType, "userId" | "title" | "completed">
 // ) => {
-export const Todo = (props: Omit<TodoType, "id">) => {
+// export const Todo = (props: Omit<TodoType, "id">) => {
+export const Todo: VFC<Omit<TodoType, "id">> = (props) => {
   // const { title, userid } = props;
   // const { title, userid, completed } = props;
   // const { title, userId, completed } = props;

@@ -3,6 +3,7 @@ import { useState } from "react";
 import "./styles.css";
 import { Todo } from "./Todo";
 import { TodoType } from "./types/todo";
+import { Text } from "./Text";
 
 // type TodoType = {
 //   // "userId": 1,
@@ -32,6 +33,8 @@ export default function App() {
   };
   return (
     <div className="App">
+      {/* <Text /> */}
+      <Text color="red" fontSize="18px" />
       <button onClick={onClickFetchData}>データ取得</button>
       {todos.map((todo) => (
         // <p>{todo.title}</p>
