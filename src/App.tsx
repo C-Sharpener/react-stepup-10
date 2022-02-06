@@ -4,6 +4,8 @@ import "./styles.css";
 import { Todo } from "./Todo";
 import { TodoType } from "./types/todo";
 import { Text } from "./Text";
+import { UserProfile } from "./UserProfile";
+import { User } from "./types/user";
 
 // type TodoType = {
 //   // "userId": 1,
@@ -15,6 +17,11 @@ import { Text } from "./Text";
 //   title: string;
 //   completed: boolean;
 // };
+
+const user: User = {
+  name: "じゃけぇ"
+  // hobbies: ["映画", "ゲーム"]
+};
 
 export default function App() {
   // const [todos, setTodos] = useState<any>([]);
@@ -33,6 +40,8 @@ export default function App() {
   };
   return (
     <div className="App">
+      {/* <UserProfile /> */}
+      <UserProfile user={user} />
       {/* <Text /> */}
       <Text color="red" fontSize="18px" />
       <button onClick={onClickFetchData}>データ取得</button>
